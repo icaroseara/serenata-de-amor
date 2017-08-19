@@ -17,4 +17,6 @@ RUN pip install --upgrade pip \
 
 USER jovyan
 
+RUN mkdir -p /home/jovyan/work/data
+
 COPY jupyter_notebook_config.py /home/jovyan/.jupyter/jupyter_notebook_config.py

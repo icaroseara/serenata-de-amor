@@ -6,7 +6,9 @@ services:
     ports:
       - 8888:8888
     volumes:
+      - ./config.ini.example:/home/jovyan/work/config.ini
       - ./research/deliver:/home/jovyan/work/deliver
+      - ./research/data:/home/jovyan/work/data
       - ./research/develop:/home/jovyan/work/develop
       - ./research/src:/home/jovyan/work/src
       - ./research/test:/home/jovyan/work/test
